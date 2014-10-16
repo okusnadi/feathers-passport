@@ -1,6 +1,6 @@
 {
   "name": "feathers-passport",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Feathers REST and websocket authentication with PassportJS.",
   "homepage": "https://github.com/feathersjs/feathers-passport",
   "keywords": [
