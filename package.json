@@ -31,7 +31,13 @@
   },
   "main": "lib/passport.js",
   "scripts": {
-    "test": "grunt test"
+    "publish": "git push origin --tags",
+    "release:patch": "npm version patch && npm publish",
+    "release:minor": "npm version minor && npm publish",
+    "release:major": "npm version major && npm publish",
+    "jshint": "jshint lib/. test/. --config",
+    "mocha": "mocha test/ --recursive",
+    "test": "npm run jshint && npm run mocha"
   },
   "directories": {
     "lib": "lib"
@@ -48,13 +54,8 @@
     "feathers": "^1.0.0",
     "feathers-hooks": "^0.4.0",
     "feathers-memory": "^0.3.4",
-    "grunt": "~0.4.1",
-    "grunt-cli": "~0.1.7",
-    "grunt-contrib-jshint": "~0.x",
-    "grunt-contrib-watch": "~0.5.3",
-    "grunt-release": "~0.5.1",
-    "grunt-simple-mocha": "~0.4.0",
-    "mocha": "*",
+    "jshint": "^2.7.0",
+    "mocha": "^2.2.4",
     "passport-local": "^1.0.0",
     "request": "^2.44.0",
     "socket.io-client": "^1.1.0",
