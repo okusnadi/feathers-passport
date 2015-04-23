@@ -29,7 +29,7 @@ describe('REST API authentication', function() {
     });
   });
 
-  it('requesting Todos returns the logged in user', function(done) {
+  it('logging in and requesting Todos returns the logged in user', function(done) {
     request({
       url: 'http://localhost:8888/login',
       method: 'POST',
