@@ -1,5 +1,7 @@
 # Feathers Passport
 
+> __DEPRECATED:__ This module is deprecated. Please use [feathers-authentication](https://github.com/feathersjs/feathers-authentication/) instead which provides PassportJS, JSON Web Token and client side authentication support.
+
 [![Build Status](https://travis-ci.org/feathersjs/feathers-passport.png?branch=master)](https://travis-ci.org/feathersjs/feathers-passport)
 
 feathers-passport adds shared [PassportJS](http://passportjs.org/) authentication for Feathers HTTP REST and websockets services.
